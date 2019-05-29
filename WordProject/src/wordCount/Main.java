@@ -44,6 +44,7 @@ public class Main
 		for(int i=0; i<words.size();i++)
 		{
 			// Collections.sort(words);
+			// Collections.reverse(words);
 			Collections.sort(count);
 			Collections.reverse(count);
 			System.out.println(words.get(i)+" occured "+count.get(i)+" time(s)");
