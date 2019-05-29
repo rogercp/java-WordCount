@@ -24,7 +24,7 @@ public class Main
 		{
 			//get next
 			String nextWord = input.next();
-			// if word is in arrlist
+			// if word is in ArrayList
 			if(words.contains(nextWord))
 			{
 				int index = words.indexOf(nextWord);
@@ -37,12 +37,35 @@ public class Main
 			}
 
 		}
+
 		input.close();
-		// print result
+		//print result
+
 		for(int i=0; i<words.size();i++)
 		{
+			// Collections.sort(words);
+			Collections.sort(count);
+			Collections.reverse(count);
 			System.out.println(words.get(i)+" occured "+count.get(i)+" time(s)");
 		}
 
+ 		
+
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
